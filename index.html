@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR-FUNCTION</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p id="calc" class="container text-center bg-info my-5 p-4"><b>CALCULATOR</b></p>
+      
+    <div class="container whole">
+            <input type="text" id="outputs" placeholder="0" class="box">
+        <br>
+
+        <div class="container rowa my-3">
+            <button onclick="cancel()">AC</button>
+            <button onclick="exp()">^</button>
+            <button onclick="mod()">%</button>
+            <button onclick="divide()">/</button>
+        </div>
+
+        <div class="container rowb my-3">
+            <button onclick="seven()">7</button>
+            <button onclick="eight()">8</button>
+            <button onclick="nine()">9</button>
+            <button onclick="mul()">*</button>
+        </div>
+
+        <div class="container rowc my-3">
+            <button onclick="four()">4</button>
+            <button onclick="five()">5</button>
+            <button onclick="six()">6</button>
+            <button onclick="sub()">-</button>
+        </div>
+
+        <div class="container rowd my-3">
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="three()">3</button>
+            <button onclick="plus()">+</button>
+        </div>
+
+        <div class="container rowe my-3">
+            <button onclick="addsub()">+/-</button>
+            <button onclick="zero()">0</button>
+            <button onclick="dec()">.</button>
+            <button onclick="equal()">=</button>
+        </div>
+    </div>
+
+        
+        
+        <script>
+
+            let outputE1 = document.getElementById('outputs');  
+            function one(){
+                outputE1.value += "1";
+            }
+            function equal(){
+                outputE1.value = eval(outputE1.value);
+            }
+            function two(){
+                outputE1.value += "2";
+            }
+            function three(){
+                outputE1.value += "3";
+            }
+            function four(){
+                outputE1.value += "4";
+            }
+            function five(){
+                outputE1.value += "5";
+            }
+            function six(){
+                outputE1.value += "6";
+            }
+            function seven(){
+                outputE1.value += "7";
+            }
+            function eight(){
+                outputE1.value += "8";
+            }
+            function nine(){
+                outputE1.value += "9";
+            }
+            function zero(){
+                outputE1.value += "0";
+            }
+            function plus(){
+                outputE1.value += "+";
+            }
+            function sub(){
+                outputE1.value += "-";
+            }
+            function mul(){
+                outputE1.value += "*";
+            }
+            function divide(){
+                outputE1.value += "/";
+            }
+            function mod(){
+                outputE1.value += "%";
+            }
+            function exp(){
+                outputE1.value += "**";
+            }
+            function addsub(){
+                outputE1.value += "+/-";
+            }
+            function cancel(){
+                outputE1.value = "";
+            }
+
+
+
+            
+    
+    </script>
+
+
+
+
+
+
+
+    
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
